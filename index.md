@@ -57,10 +57,12 @@ pyhton3 main_proc.py -e help
 ### Priority One
 #### One Condition
 In the first scenario, the hacker scans the victim's system for information before attacking the node. As shown in Table.1, for this reason, in the same New-ARP, there is also a hacker profile (IP, MAC) so that there are 2 different IP addresses for the forged MAC. In this case, it is enough for the MAC to search the system identified as the victim in the same New-ARP list and find the IP associated with it (except for the IP found for the victim node). In this step, our proposed tool identifies the victim system, the type of attack and the hacker profile and sends this information to both the node and other agents within the network for further prevention.
+####Comparing the table  A with table B according condition no.1 
 ![Condition 1](/assets/images/CONDITION_1.png)
 
 #### Two Condition
 As shown in Table.2, the second attack scenario occurs when the attacker leaves no trace of himself in New-ARP and only attempts to forge and thus change the MAC on the victim node in the New-ARP system. At this stage, our proposed tool uses two different methods to identify the hacker profile. In the first method, the agent in question propagates the forged MAC to all other agents in the network and requests that if there is an IP address associated with that MAC address, it be sent in response to the agent in question. The second method is used when no response is received from the agents, in which case the agent activates procedure_net_scan. This procedure uses network scanning to identify the forged MAC IP. This scenario occurs when the hacker did not scan the network at all but was present in the network and is still connected to the network.
+####Comparing the table  A with table B according condition no.2 
 ![Condition 2](/assets/images/CONDITION_2.png)
 
 ### Priority Two
