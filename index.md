@@ -26,26 +26,16 @@ The proposed tool can be installed and implemented in two forms, single agent an
 #### Recommended Hardware Requirements 
 For an optimal experience with hands-on labs and other practical activities, we     recommend the following configuration: 
 - Processor: Dual Core 1.8Ghz (64-bit) or better configuration 
-- Memory: 4GB or more 
+- Memory: 1GB or more 
 - Storage: 2GB or more
 
 #### Software Requirements
-- Python 3.8.x or 3.9.x (NOT 3.7, ..)
+- Python 3.8.x or 3.9.x
 
 #### Supported OS
 - Operating system: Linux(Debian/Redhat)
 
-#### Install Single Agent
-
-```bash
-apt install python3
-pip install -r requirements.txt
-git clone https://github.com/OWASP/mitm_guard.git
-cd mitm_guard/
-pyhton3 main_proc.py -e help
-```
-
-#### Install Multi Agent
+#### Install Single Agent OR Multi Agent
 
 ```bash
 apt install python3
@@ -112,6 +102,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
 # links
-### [OWASP](https://owasp.org/www-project-mitm-guard/)
-### [DOWNLOAD](https://github.com/OWASP/mitm_guard/)
-### [Wiki](https://github.com/OWASP/mitm_guard/wiki)
+#### [OWASP](https://owasp.org/www-project-mitm-guard/)
+#### [DOWNLOAD](https://github.com/OWASP/mitm_guard/)
+#### [Wiki](https://github.com/OWASP/mitm_guard/wiki)
