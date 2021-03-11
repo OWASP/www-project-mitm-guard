@@ -28,13 +28,11 @@ For an optimal experience with hands-on labs and other practical activities, we 
 - Processor: Dual Core 1.8Ghz (64-bit) or better configuration 
 - Memory: 4GB or more 
 - Storage: 2GB or more
-#### Software Requirements  
-- Operating system: Linux 
+#### Software Requirements
 - Python 3.8.x or 3.9.x (NOT 3.7, ..)
-### Install Steps
 #### Supported OS
-- Linux (Debian/Redhat)
-#### Single Agent
+- Operating system: Linux(Debian/Redhat)
+#### Install Single Agent
 
 ```bash
 apt install python3
@@ -44,7 +42,7 @@ cd mitm_guard/
 pyhton3 main_proc.py -e help
 ```
 
-#### Multi Agent
+#### Install Multi Agent
 
 ```bash
 apt install python3
