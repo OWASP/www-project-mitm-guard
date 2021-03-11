@@ -55,7 +55,6 @@ pyhton3 main_proc.py -e help
 
 # Different condition for detection and prevention
 ### Priority One
-
 ```
 #### One Condition
 In the first scenario, the hacker scans the victim's system for information before attacking the node. As shown in Table.1, for this reason, in the same New-ARP, there is also a hacker profile (IP, MAC) so that there are 2 different IP addresses for the forged MAC. In this case, it is enough for the MAC to search the system identified as the victim in the same New-ARP list and find the IP associated with it (except for the IP found for the victim node). In this step, our proposed tool identifies the victim system, the type of attack and the hacker profile and sends this information to both the node and other agents within the network for further prevention.
@@ -84,23 +83,22 @@ MIT License
 
 Copyright (c) 2021 OWASP
 
-<div style="text-align:justify">Permission is hereby granted, free of charge, to any person obtaining a copy
+Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:</div>
+furnished to do so, subject to the following conditions:
 
-<div style="text-align:justify">The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.</div>
-
-<div style="text-align:justify">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.</div>
+SOFTWARE.
 
 # links
 #### [OWASP](https://owasp.org/www-project-mitm-guard/)
