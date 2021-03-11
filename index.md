@@ -59,18 +59,18 @@ pyhton3 main_proc.py -e help
 #### One Condition
 In the first scenario, the hacker scans the victim's system for information before attacking the node. As shown in Table.1, for this reason, in the same New-ARP, there is also a hacker profile (IP, MAC) so that there are 2 different IP addresses for the forged MAC. In this case, it is enough for the MAC to search the system identified as the victim in the same New-ARP list and find the IP associated with it (except for the IP found for the victim node). In this step, our proposed tool identifies the victim system, the type of attack and the hacker profile and sends this information to both the node and other agents within the network for further prevention.
 ```
-
+![Condition 1](/assets/images/CONDITION_1.png)
 ```
 #### Two Condition
 As shown in Table.2, the second attack scenario occurs when the attacker leaves no trace of himself in New-ARP and only attempts to forge and thus change the MAC on the victim node in the New-ARP system. At this stage, our proposed tool uses two different methods to identify the hacker profile. In the first method, the agent in question propagates the forged MAC to all other agents in the network and requests that if there is an IP address associated with that MAC address, it be sent in response to the agent in question. The second method is used when no response is received from the agents, in which case the agent activates procedure_net_scan. This procedure uses network scanning to identify the forged MAC IP. This scenario occurs when the hacker did not scan the network at all but was present in the network and is still connected to the network.
 ```
-
+![Condition 2](/assets/images/CONDITION_2.png)
 
 ### Priority Two
 ```
 After reviewing the priority 1, if there are no changes in the CN after checking, this time the Agent will check the normal hosts in the network to detect any MAC forgery or MITM attack. At this point, the Agent detects a MAC address in the New-ARP list that has 2 different IPs. As shown in Table.3, identifying such a MAC address indicates that one of the available IP addresses is the hacker IP. To find out which hacker and which IP is the victim, the Agent sends an ARP Request and compares the target MAC to find out which IPs are real and which are related to the hacker. After identifying the information about the hacker and the victim system, this information is published among all internal agents to perform the next steps, prevention. In the third stage, Prevention, after detecting the agent attack, the IP-MAC router address and the IP-MAC hacker address are set statically at variable time intervals (first 10 minutes, second time 30 minutes, third time 2 days) by the admin the network is configured, it does. It then releases the IP-MAC Attacker to all neighboring agents so that they can continue to set the static IP-MAC router and hacker addresses. This prevents the hacker from launching an attack on the network within the initial set time. If the time of static IP-MAC address of the hacker and router expires and the hacker attacks again, this time will increase.
 ```
-
+![Priority 2](/assets/images/PRIORITY_2.png)
 # Roadmap
 The highest priorities will be as the following From February 2021 to the next 6 months:
 -	Compatible with Windows OS
