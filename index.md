@@ -55,15 +55,15 @@ pyhton3 main_proc.py -e help
 
 # Different condition for detection and prevention
 ### Priority One
-<div style="text-align:justify">
+
 ```
 #### One Condition
 In the first scenario, the hacker scans the victim's system for information before attacking the node. As shown in Table.1, for this reason, in the same New-ARP, there is also a hacker profile (IP, MAC) so that there are 2 different IP addresses for the forged MAC. In this case, it is enough for the MAC to search the system identified as the victim in the same New-ARP list and find the IP associated with it (except for the IP found for the victim node). In this step, our proposed tool identifies the victim system, the type of attack and the hacker profile and sends this information to both the node and other agents within the network for further prevention.
 ```
-</div>
+
 ```
 #### Two Condition
-<div style="text-align:justify">As shown in Table.2, the second attack scenario occurs when the attacker leaves no trace of himself in New-ARP and only attempts to forge and thus change the MAC on the victim node in the New-ARP system. At this stage, our proposed tool uses two different methods to identify the hacker profile. In the first method, the agent in question propagates the forged MAC to all other agents in the network and requests that if there is an IP address associated with that MAC address, it be sent in response to the agent in question. The second method is used when no response is received from the agents, in which case the agent activates procedure_net_scan. This procedure uses network scanning to identify the forged MAC IP. This scenario occurs when the hacker did not scan the network at all but was present in the network and is still connected to the network.</div>
+As shown in Table.2, the second attack scenario occurs when the attacker leaves no trace of himself in New-ARP and only attempts to forge and thus change the MAC on the victim node in the New-ARP system. At this stage, our proposed tool uses two different methods to identify the hacker profile. In the first method, the agent in question propagates the forged MAC to all other agents in the network and requests that if there is an IP address associated with that MAC address, it be sent in response to the agent in question. The second method is used when no response is received from the agents, in which case the agent activates procedure_net_scan. This procedure uses network scanning to identify the forged MAC IP. This scenario occurs when the hacker did not scan the network at all but was present in the network and is still connected to the network.
 ```
 
 
@@ -79,29 +79,29 @@ The highest priorities will be as the following From February 2021 to the next 6
 -	Improving source code 
 
 # Licensing
-<div style="text-align:justify">
+
 MIT License
 
 Copyright (c) 2021 OWASP
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
+<div style="text-align:justify">Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
 in the Software without restriction, including without limitation the rights
 to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+furnished to do so, subject to the following conditions:</div>
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+<div style="text-align:justify">The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.</div>
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+<div style="text-align:justify">THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
 FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
 AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
-</div>
+SOFTWARE.</div>
+
 # links
 #### [OWASP](https://owasp.org/www-project-mitm-guard/)
 #### [DOWNLOAD](https://github.com/OWASP/mitm_guard/)
